@@ -17,12 +17,11 @@ body {
   width: 782px;
   height: 887px;
   border-radius: 20px;
-  left: 164px;
-  top: 35px;
+  margin-left: 164px;
+  margin-top: 35px;
 }
 
 .special {
-  position: absolute;
   width: 782px;
   height: 852px;
   background: linear-gradient(to bottom, #ddd4c500, #8e887e);
@@ -31,11 +30,10 @@ body {
 }
 
 .special-gg {
-  position: absolute;
   width: 125px;
   height: 21px;
-  top: 39px;
-  left: 40px;
+  margin-top: 39px;
+  margin-left: 40px;
   opacity: 0.4;
   font-weight: 500;
   font-size: 15px;
@@ -47,8 +45,8 @@ body {
   position: absolute;
   width: 88px;
   height: 37px;
+  margin-left: 43px;
   top: 630px;
-  left: 43px;
   font-weight: 500;
   font-size: 31px;
   line-height: 37.2px;
@@ -62,7 +60,7 @@ body {
   width: 538px;
   height: 24px;
   top: 731px;
-  left: 37px;
+  margin-left: 37px;
   font-weight: 500;
   font-size: 150px;
   line-height: 24px;
@@ -72,37 +70,36 @@ body {
 }
 
 .special-image {
-  position: absolute;
   width: 687px;
   height: 667px;
-  top: 182px;
-  left: 59px;
+  margin-top: 123px;
+  margin-left: 59px;
   z-index: 1;
 }
 
 .group {
-  position: absolute;
-  top: 35px;
-  left: 974px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 35px;
+  margin-left: 28px;
 }
 
 /* creative */
 .creative {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
   width: 782px;
   height: 371px;
   border-radius: 20px;
   background: #f7f7f8;
-  display: flex;
-  flex-direction: column;
 }
 
 .creative-p {
-  position: absolute;
   width: 544px;
   height: 74px;
-  top: 45px;
-  left: 119px;
+  margin-top: 45px;
   font-weight: 500;
   font-size: 31px;
   line-height: 37.2px;
@@ -112,12 +109,7 @@ body {
 
 .creative-items {
   display: flex;
-  position: absolute;
   align-items: center;
-  justify-content: space-between;
-  top: 193px;
-  left: 51px;
-  right: 51px;
 }
 
 .creative-item {
@@ -127,8 +119,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: center;
-  padding: 0 110px;
+  margin-top: 74px;
 }
 
 .creative-item p {
@@ -138,77 +129,67 @@ body {
   font-size: 17px;
   line-height: 22.1px;
   letter-spacing: -0.34px;
-  text-align: center;
   color: #1e1e1e;
   margin-top: 8px;
 }
 
 .creative-icon1 {
   display: flex;
-}
-
-.icon1-bottom {
-  position: absolute;
-  width: 7.015921592712402px;
-  height: 7.015849590301514px;
-  top: 45px;
-  left: 106.343333445555559999999999999999999999999999999px;
-}
-
-.icon1-top {
-  position: absolute;
-  width: 16.63003158569336px;
-  height: 27.27724266052246px;
-  top: 30px;
-  left: 101px;
-}
-
-.icon1-parent {
-  position: relative;
-  display: flex;
-  align-items: center;
+  width: 48px;
+  height: 48px;
+  padding: 6px 12.044px 6px 12px;
   justify-content: center;
-  width: 23.95581817626953px;
-  height: 36px;
+  align-items: center;
+  flex-shrink: 0;
 }
 
 .creative-icon2 {
-  width: 20.831087112426758px;
-  height: 36px;
-  top: 5px;
-  left: 14px;
-  color: #000;
+  display: flex;
+  width: 48px;
+  height: 48px;
+  padding: 5px 13.169px 7px 14px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
 }
 
 .creative-icon3 {
-  width: 43px;
-  height: 28.162311553955078px;
-  top: 10px;
-  left: 3px;
-  color: #000;
+  display: flex;
+  width: 48px;
+  height: 48px;
+  padding: 10px 2px 9.838px 3px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.creative-hr {
+  margin: 74px 48px 0 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1px;
+  height: 132px;
+  background: rgba(0, 0, 0, 0.11);
 }
 
 /* shopAll */
 .shopAll {
-  position: relative;
-  top: 27px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 27px;
   gap: 10px;
-  width: 782px;
 }
 
 .shopAll-btn {
   width: 124px;
-  height: 48px;
+  height: 46px;
   border-radius: 100px;
   gap: 8px;
   padding: 16px 24px;
   position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   z-index: 2;
   background-color: #827c6c;
   cursor: pointer;
